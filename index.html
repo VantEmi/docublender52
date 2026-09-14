@@ -504,77 +504,115 @@ It will be possible to save a custom set of workspaces as part of the Predefined
 <p>If you trust the source of your blend-files, you can enable Auto Run Python Scripts. This option is meant to protect you from malicious Python scripts in blend-files that you got from someone else. Many users turn this option on, as advanced rigs tend to use scripts of some sort. Use caution, as this is a global setting, and may allow potentially malicious Python code from an untrusted source to run.</p>
 
   </div>
-<!--- Scripts– - !>
-<h2> Scripts </h2>
-<p> Apart from add-ons, there are also scripts you can use to extend Blender’s functionality:</p>
-<p> Modules: Utility libraries for import into other scripts. </p>
+<!-- Scripts -->
+<h2>Scripts</h2>
+
+<p>Apart from add-ons, there are also scripts you can use to extend Blender’s functionality:</p>
+
+<p>Modules: Utility libraries for import into other scripts.</p>
+
 <p>Presets: Settings for Blender’s tools and key configurations.</p>
+
 <p>Startup: These files are imported when starting Blender. They define most of Blender’s UI, as well as some additional core operators.</p>
-<p>Custom scripts: In contrast to add-ons they are typically intended for one-time execution via the Text Editor.</p>
+
+<p>Custom scripts: In contrast to add-ons, they are typically intended for one-time execution via the Text Editor.</p>
 
 
-<h3> Saving your own scripts <h3>
-<p> File Location:All scripts are loaded from the scripts folder of the local, system and user paths.
+<h3>Saving your own scripts</h3>
+
+<p>
+    File Location: All scripts are loaded from the scripts folder of the local, system and user paths.
+    You can set up an additional search path for scripts in File Paths Preferences ‣ File Paths.
+</p>
 
 
-You can setup an additional search path for scripts in File Paths Preferences ‣ File Paths.</p>
+<p>
+    Installation: Add-ons are conveniently installed through Blender in the Preferences.
+    Click the Install… button and select the .py or .zip file.
+</p>
+
+<p>
+    To manually install scripts or add-ons, place them in the addons, modules, presets,
+    or startup directory according to their type. See the description above.
+</p>
 
 
-<p> Installation:
-Add-ons are conveniently installed through Blender in the Preferences. Click the Install… button and select the .py or .zip file.
+<!-- Área de trabajo -->
+<h2>Workspaces</h2>
+
+<p>
+    Workspaces are essentially predefined window layouts. Each Workspace consists of a set
+    of Areas containing Editors, and is geared towards a specific task such as modeling,
+    animating, or scripting. You’ll typically switch between multiple Workspaces while
+    working on a project.
+</p>
+
+<h3>Add a Workspace</h3>
+
+<p>
+    Adds a new workspace from a predefined template (e.g. Modeling, Sculpting, Compositing).
+</p>
 
 
-To manually install scripts or add-ons, place them in the addons, modules, presets, or startup directory according to their type. See the description above. </p>
+<h3>Save and Override</h3>
+
+<p>
+    The workspaces are saved in the blend-file. When you open a file, enabling Load UI in
+    the File Browser indicates that Blender should use the file’s screen layout rather than
+    the current one. A custom set of workspaces can be saved as a part of the Defaults.
+</p>
+
+<p>
+    Pin Scene: When enabled, the current workspace will remember the currently selected scene.
+    Then, whenever you activate the workspace, it’ll automatically switch back to that scene.
+</p>
+
+<p>
+    Mode: Switch to this Mode when activating the workspace.
+</p>
+
+<p>
+    Sequencer Scene: The scene containing the edit that is used by the video sequence editor.
+    See Sequencer Scene.
+</p>
+
+<p>
+    Sync Scene Time: Sync the active scene and time based on the current scene strip in the
+    video sequence editor. See Sequencer Scene.
+</p>
+
+<p>
+    Filter Add-ons: Determines which add-ons are enabled in the active workspace.
+    When unchecked, the global add-ons will be used. When checked, you can enable individual
+    add-ons in the list below.
+</p>
 
 
+<!-- Autoguardado -->
+<h2>Auto-Save Preferences</h2>
 
+<p>
+    By default, a new Blender installation is set to auto-save changes to preferences,
+    so you don’t accidentally lose a change you have made. To disable this behavior,
+    perform these steps:
+</p>
 
-<!- Área de tlabajo -!>
-<h2> Workspaces </h2>
-<p> Workspaces are essentially predefined window layouts. Each Workspace consists of a set of Areas containing Editors, and is geared towards a specific task such as modeling, animating, or scripting. You’ll typically switch between multiple Workspaces while working on a project.<p>
-<h3> Add a Workspace <h3>
-<p> Adds a new workspace from a predefined template (e.g. Modeling, Sculpting, Compositing). </p>
+<p>Open the Preferences dialog.</p>
 
+<p>1. Click on the small menu at the lower left (shown by 3 lines).</p>
 
-<h3> Save and Override </h3>
-<p> The workspaces are saved in the blend-file. When you open a file, enabling Load UI in the File Browser indicates that Blender should use the file’s screen layout rather than the current one. A custom set of workspaces can be saved as a part of the Defaults. </p>
-<p> Pin Scene:
-When enabled, the current workspace will remember the currently selected scene. Then, whenever you activate the workspace, it’ll automatically switch back to that scene.</p>
-<p> Mode:
-Switch to this Mode when activating the workspace.</p>
-<p> Sequencer Scene:
-The scene containing the edit that is used by the video sequence editor. See Sequencer Scene.</p>
-<p> Sync Scene Time:
-Sync the active scene and time based on the current scene strip in the video sequence editor. See Sequencer Scene. </p>
-<p> Filter Add-ons:
-Determines which add-ons are enabled in the active workspace. When unchecked, the global add-ons will be used. When checked, you can enable individual add-ons in the list below.</p>
+<p>2. Uncheck the box next to “Auto-Save Preferences”.</p>
 
+<p>
+    Click the “Save Preferences” button that will appear in the lower left of the dialog.
+    Don’t forget this step, as the change will not be saved otherwise.
+</p>
 
+</div>
 
-
-
-
-<!- Autoguardado -!>
-<h2> Auto-Save Preferences </h2>
-<p> By default, a new Blender installation is set to auto-save changes to preferences, so you don’t accidentally lose a change you have made. To disable this behavior, perform these steps: </p>
-Open the Preferences dialog
-
-
-<p> 1. Click on the small menu at the lower left (shown by 3 lines) </p>
-
-
-<p> 2. Uncheck the box next to “Auto-Save Preferences” </p>
-
-
-<p> Click the “Save Preferences” button that will appear in the lower left of the dialog. Don’t forget this step, as the change will not be saved otherwise. </p>
-
-
-    </div>
-
-    <footer>
-        VANTE · Documentación sobre la configuración de la interfaz de Blender · 2026
-    </footer>
+<footer>
+    VANTE · Documentación sobre la configuración de la interfaz de Blender · 2026
+</footer>
 
 </body>
-
 </html>
